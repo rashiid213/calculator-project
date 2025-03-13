@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(to right, #541388, #23293e);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        color: white;
+        box-sizing: border-box;  
+}
+.contactform{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: url(C:/Users/a/Desktop/restruntwebsite/imges/back1.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    padding: 20px;
+    border-radius: 15px;
+    
+    
+}
+.contact-right{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contact-right h2{
+    font-weight: 600;
+    font-size: 40px;
+    color:grey
+}
+.inputs{
+    width: 400px;
+    height: 50px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    font-weight: 400;
+    color: #666;
+    padding-left: 25px;
+}
+.contact-right textarea{
+    height: 140px;
+    padding-top: 25px;
+    border-radius: 20px;
+}
+.inputs:focus{
+    border: 2px solid #ff994f;
+}button:hover{background-color: rgb(238, 235, 235);
+    color: black;border:1px   solid #000;
+}
+button{background-color: black;
+    color: white;cursor: pointer;
+    width: 100px;
+    height: 40px;gap: 10px;
+    border: none;
+    border-radius: 16px;
+    line-height: 12px;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+@media (max-width:800px) {
+    .inputs{width: 80vh;}
+    .contact-left{
+        display: none;
+    }
+    .contactform{
+        height: 600px;
+    }
+}

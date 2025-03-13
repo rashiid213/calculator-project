@@ -1,0 +1,47 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div class="contactform">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-right">
+            <h2>Contact Form</h2>
+            <input type="hidden" name="access_key" value="35799b60-c7c4-4aa4-8c17-cae19484bab2">
+     <input type="text" placeholder="Your name" name="name" required class="inputs"  >
+     <input type="Email" placeholder="Your Email" name="Email" required  class="inputs" >
+     <textarea name="Message"  required placeholder="Message" class="inputs" id="text"></textarea>
+     <button type="submit">Submit</button>
+        </form>
+        
+        <div class="contact-left">
+<img src="C:/Users/a/Desktop/restruntwebsite/imges/chief2.jpg" alt="">
+        </div>
+        <p id="result"> </p>
+    </div>
+    
+<script>
+   document.getElementById('text').addEventListener('input',function(event){
+    let charac=event.target.value
+    let max=200;
+    if(charac.length>max){
+        charac=charac.slice(0,max)
+        event.target.value=charac;
+    }
+    document.getElementById('result').textContent=charac.length>=max?
+    `reached 200`:
+    `count${charac.length}`
+   })
+</script>
+</body>
+</html>

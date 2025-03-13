@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+     border: none;
+}
+    body {
+        font-family: 'Nunito', sans-serif;
+        font-weight: 200;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+
+    .chiefs{
+        margin: 20px 40px;
+        text-align: center;
+    }
+.tittle{
+        text-align: center;
+        text-transform: uppercase;
+        color: #444;
+        margin-bottom: 48px;
+        font-size: 20px;
+    }
+
+.chefs{
+display: flex;
+justify-content: center;
+margin: 20px 80px;
+flex-wrap: wrap;
+}
+.chef{
+    max-width: 350px;
+  margin: 9px;
+  margin-top: 10px;
+  
+}
+.chefs :hover{
+    background-color: #ddd;
+}
+.chefs .chef img{
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+}
+.tittlename{
+    font-weight: bold;
+    font-size: 16px;
+    padding: 12px;
+    text-transform: uppercase;
+}
+.tittlename1{
+    font-style: italic;
+    color: #888;
+}
+.work{
+    font-weight: lighter;
+    margin: 20px 0;
+    color: #4e4e4e;
+}
